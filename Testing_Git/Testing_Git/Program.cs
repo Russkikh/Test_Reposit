@@ -9,8 +9,15 @@ namespace Testing_Git
     {
         static void Main(string[] args)
         {
-            
-            int i = Convert.ToInt32(Console.ReadLine());
+            int i = 0;
+            try
+            {
+                i = Convert.ToInt32(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Uncorrect input!");
+            }
             for (int j = 0; j < i; j++)
             {
                 Console.WriteLine("Hello World!");
