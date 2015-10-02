@@ -9,7 +9,12 @@ namespace Testing_Git
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            int i = Convert.ToInt32(Console.ReadLine());
+            for (int j = 0; j < i; j++)
+            {
+                Console.WriteLine("Hello World!");
+            }
             Console.ReadKey();
         }
     }
